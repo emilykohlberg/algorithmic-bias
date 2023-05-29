@@ -1,6 +1,7 @@
 {
   "name": "vite-template-react",
   "version": "1.2.0",
+  "homepage": "https://emilykohlberg.github.io/algorithmic-bias/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
