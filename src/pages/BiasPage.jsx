@@ -34,10 +34,7 @@ const BiasPage = ({}) => {
             </p>
           </div>
           <div className="bias-image-container">
-            <img
-              src="../../../algorithmic-bias/images/bias_image.png"
-              className="bias-image"
-            ></img>
+            <img src="../../bias_image.png" className="bias-image"></img>
           </div>
         </div>
         <h3>Ok, so can computers have bias too?</h3>
@@ -118,7 +115,7 @@ const BiasPage = ({}) => {
               </div>
               <div className="alg-bias-image-container">
                 <img
-                  src="../../../algorithmic-bias/images/alg_bias_image.png"
+                  src="../../alg_bias_image.png"
                   className="alg-bias-image"
                 ></img>
               </div>
