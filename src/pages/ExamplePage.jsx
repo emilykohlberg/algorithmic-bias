@@ -1,34 +1,48 @@
+import "./ExamplePage.css";
+
 const ExamplePage = ({}) => {
   return (
     <div className="example-page">
       <h1>What are some examples of algorithmic bias?</h1>
       <div className="main-content">
-        <p>
-          I will discuss algorithmic bias and fairness through an explainer
-          blog/website. This will be aimed towards high school or college
-          students early on in their computer science education or students who
-          do not plan on studying computer science. This is an important and
-          often overlooked computer science topic that I have only recently seen
-          in classes, but I think it would be better to learn about earlier as
-          fighting algorithmic bias should shape the way that people program.
-          Societal biases are often reflected in artificial intelligence
-          algorithms, whether this is intentional or unintentional. Algorithmic
-          bias is something that can be fixed, which can lead to a more fair
-          future for marginalized communities, but people need to be educated on
-          the topic in order to do this. The intent behind the design will be to
-          make people aware of the issue, provide tangible examples so they can
-          understand how it affects people, and offer solutions that they can
-          use in their own programming. Because the target audience is not very
-          familiar with computer science, it will stay at a fairly high level
-          instead of going into the mechanics of different fairness
-          metrics/algorithms. For computer science students, it is meant to
-          spark interest in the topic early on in their education because I
-          think it will help shape their overall outlook on programming rather
-          than feel like an afterthought if it were to be presented later on in
-          their careers. For non-computer science students, it is meant to teach
-          them about the social implications that algorithmic bias has on the
-          world.
-        </p>
+        <div className="example">
+          <h2>Racism in Healthcare</h2>
+          <p>
+            US healthcare uses in algorithm to determine which patients need
+            more medical care. This algorithm favored white patients over
+            minorities.
+          </p>
+          <p>
+            Race was not used in the algorithm directly, but due to systemic
+            biases in society, race is heavily correlated to socio-economic
+            status and healthcare history.
+          </p>
+          <p>
+            The algorithm uses previous healthcare spending data, and the data
+            showed that white patients have spent more money on healthcare than
+            black patients.
+          </p>
+          <p>
+            This bias has been reduced by 80%, but could still use work to fully
+            eliminate.
+          </p>
+        </div>
+        <div className="example">
+          <h2>Racism in Criminal Justice</h2>
+          <p>
+            COMPAS (Correctional Offender Management Profiling for Alternative
+            Sanctions) is a software that is used by courts to determine how
+            likely someone is to repeat the criminal behavior that they are on
+            trial for, even after they receive sanctions/punishment.
+          </p>
+          <p>
+            The US criminal justice system is widely known to hold racial biases
+            against black people. This software is no different. It has twice as
+            many false positive results (meaning that it incorrectly predicted
+            them to have to have repeat offenses) for black individuals over
+            white individuals.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -5,9 +5,41 @@
 }
 
 .bias-text {
-    width: 50%;
+    width: 65%;
+}
+
+.bias-image-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    align-items: center;
 }
 
 .bias-image {
+    width: 100%;
+    height: auto;
+}
+
+.ai-content {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.ai-text {
+    width: 50%;
+}
+
+.alg-bias-image-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
     width: 45%;
+    align-items: center;
+}
+
+.alg-bias-image {
+    width: 100%;
+    height: auto;
 }

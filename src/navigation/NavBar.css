@@ -60,7 +60,7 @@
 
 
 main {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     padding: 20px;
     background: linear-gradient(#ffffff, #f6ebf4);
 
