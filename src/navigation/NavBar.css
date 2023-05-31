@@ -1,11 +1,9 @@
 .header {
     display: flex;
-    background: #ff9cc5;
+    background: #482673;
     width: 100vw;
     align-items: center;
 }
-
-
 
 .heading-title{
     text-align: center;
@@ -15,14 +13,12 @@
 	justify-content: center;
 	align-items: center;
 	height: 20px;
-    width: 25%;
+    width: 15%;
     padding: 15px;
     margin: 10px;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-  	text-transform: uppercase;
-
 }
 
 .nav-bar {
@@ -38,7 +34,7 @@
     justify-content: space-evenly;
     height: 50px;
     align-items: center;
-    width: 75%;
+    width: 83%;
 }
 
 .nav-button {
@@ -49,24 +45,23 @@
 	justify-content: center;
 	align-items: center;
 	height: 20px;
-	width: 170px;
+	width: 16%;
     padding: 10px;
 	font-size: 16px;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-  	text-transform: uppercase;
-    border: 5px white solid;   
+    border: 2px white solid;   
 }
 
 .heading-title:hover, .nav-button:hover, .active{
 	background-color: white;
-    color: #ff9cc5;;
+    color: #482673;
 }
 
 
 main {
     height: calc(100vh - 70px);
     padding: 20px;
-    background: linear-gradient(#ffffff, #ffdbea);
+    background: linear-gradient(#ffffff, #f6ebf4);
 
 }

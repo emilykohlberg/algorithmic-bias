@@ -10,11 +10,22 @@ const NavBar = () => {
             Algorithmic Bias
           </NavLink>
           <div className="main-nav-bar">
-            <NavLink to="example" id="exampleButton" className="nav-button">
+            <NavLink to="examples" id="exampleButton" className="nav-button">
               Examples
             </NavLink>
-            <NavLink to="society" id="societyButton" className="nav-button">
-              Impacts
+            <NavLink
+              to="social-impacts"
+              id="societyButton"
+              className="nav-button"
+            >
+              Social Impacts
+            </NavLink>
+            <NavLink
+              to="fairness-metrics"
+              id="fairnessButton"
+              className="nav-button"
+            >
+              Fairness Metrics
             </NavLink>
             <NavLink
               to="processing"
@@ -25,7 +36,7 @@ const NavBar = () => {
             </NavLink>
 
             <NavLink to="technical" id="technicalButton" className="nav-button">
-              Technical
+              Technical Details
             </NavLink>
           </div>
         </nav>

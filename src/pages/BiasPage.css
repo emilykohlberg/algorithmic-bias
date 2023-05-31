@@ -1,0 +1,13 @@
+.bias-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bias-text {
+    width: 50%;
+}
+
+.bias-image {
+    width: 45%;
+}
