@@ -6,9 +6,17 @@ const ProcessingPage = ({}) => {
     q: "If we have access to all of the training data and the model, which data processing method should we use?",
     a: "Pre-Processing",
   };
-  const [question, setQuestion] = useState("q");
 
-  const handleClick = () => {
+  const q2 = {
+    q: "If we only have access to the results of the algorithm, what type of data processing would be best to use?",
+    a: "Post-Processing",
+  };
+
+  const [question1, setQuestion1] = useState("q");
+  const [question2, setQuestion2] = useState("q");
+
+  const handleClick = (question, setQuestion) => {
+    // console.log(data);
     if (question == "q") {
       setQuestion("a");
     } else {
@@ -49,6 +57,11 @@ const ProcessingPage = ({}) => {
           <h4>
             For when bias coming from the model and you have access to the model
           </h4>
+          <p>
+            In-processing is when you change the algorithm to mitigate bias.
+            Often, this come in the form of adding a de-bias term that helps
+            reweight the underpriveleged groups.
+          </p>
         </div>
         <div className="processing-subsection">
           <h2>Post-Processing</h2>
@@ -56,14 +69,45 @@ const ProcessingPage = ({}) => {
             When you don't have access to either the model or the training data,
             just the results.
           </h4>
+          <p>
+            Post-processing occurs when the model has already created
+            predictions for the data. This is more of a last step to mitigate
+            bias. One popular method is to get rid of predictions that had
+            higher values of uncertainty because these values likely contain
+            biased results.
+          </p>
+        </div>
+        <h2>Questions to test your knowledge!</h2>
+        <div className="button-container">
+          <button
+            className={
+              question1 == "q"
+                ? "question-button question"
+                : "question-button answer"
+            }
+            onClick={() => handleClick(question1, setQuestion1)}
+          >
+            <p>{question1 == "q" ? "Question:" : "Answer:"}</p>
+            <p>
+              <b>{q1[question1]}</b>
+            </p>
+            <p>Click to see {question1 == "q" ? "answer" : "question"}</p>
+          </button>
         </div>
         <div className="button-container">
-          <button className="question-button" onClick={handleClick}>
-            <p>{question == "q" ? "Question:" : "Answer:"}</p>
+          <button
+            className={
+              question2 == "q"
+                ? "question-button question"
+                : "question-button answer"
+            }
+            onClick={() => handleClick(question2, setQuestion2)}
+          >
+            <p>{question2 == "q" ? "Question:" : "Answer:"}</p>
             <p>
-              <b>{q1[question]}</b>
+              <b>{q2[question2]}</b>
             </p>
-            <p>Click to see {question == "q" ? "answer" : "question"}</p>
+            <p>Click to see {question2 == "q" ? "answer" : "question"}</p>
           </button>
         </div>
       </div>
