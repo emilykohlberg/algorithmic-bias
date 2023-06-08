@@ -51,23 +51,27 @@ const FairnessPage = ({}) => {
               This can be divided into statistical based fairness and causality
               based fairness.
             </p>
+            <h3>Stage 2: Definition</h3>
+            <h4>Statistical based fairness</h4>
             <p>
-              <b>Statistical based fairness</b> means that the vulnerable group
-              as a whole is treated similarly to the non-vulnerable group as a
-              whole.
+              Statistical based fairness means that the vulnerable group as a
+              whole is treated similarly to the non-vulnerable group as a whole.
             </p>
             <p>
-              Demographic parity means the vulnerable and non-vulnerable groups
-              have the same probability for each result. The output Y does not
-              depend on the protected attribute S.
+              <b>Demographic parity</b> means the vulnerable and non-vulnerable
+              groups have the same probability for each result. The output Y
+              does not depend on the protected attribute S.
             </p>
             <p>𝑃( 𝑦̂ | 𝑠 = 0 ) = 𝑃( 𝑦̂ | 𝑠 = 1 )</p>
             <p>
-              Equalized odds means that the true positive and false positive
-              rates are the same for the vulnerable and non-vulnerable groups.
+              <b>Equalized odds</b> means that the true positive and false
+              positive rates are the same for the vulnerable and non-vulnerable
+              groups.
             </p>
             <p>𝑃( 𝑦̂ | 𝑠 = 0, 𝑦 ) = 𝑃( 𝑦̂ | 𝑠 = 1, 𝑦 ), 𝑦̂ = 0, 1, 𝑦 = 0, 1</p>
-            <p>Equal opportunity just focuses on the true positive rates.</p>
+            <p>
+              <b>Equal opportunity</b> just focuses on the true positive rates.
+            </p>
             <p>𝑃( 𝑦̂ = 1 | 𝑠 = 0, 𝑦 = 1 ) = 𝑃( 𝑦̂ = 1 | 𝑠 = 1, 𝑦 = 1 )</p>
           </div>
         </div>
