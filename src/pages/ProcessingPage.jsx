@@ -49,7 +49,7 @@ const ProcessingPage = ({}) => {
           </ul>
           <p>
             This is when we make changes to the training data to make it more
-            fair.
+            fair (Feast, 2020).
           </p>
         </div>
         <div className="processing-subsection">
@@ -60,7 +60,7 @@ const ProcessingPage = ({}) => {
           <p>
             In-processing is when you change the algorithm to mitigate bias.
             Often, this come in the form of adding a de-bias term that helps
-            reweight the underpriveleged groups.
+            reweight the underpriveleged groups (Feast, 2020).
           </p>
         </div>
         <div className="processing-subsection">
@@ -74,7 +74,7 @@ const ProcessingPage = ({}) => {
             predictions for the data. This is more of a last step to mitigate
             bias. One popular method is to get rid of predictions that had
             higher values of uncertainty because these values likely contain
-            biased results.
+            biased results (Feast, 2020).
           </p>
         </div>
         <h2>Questions to test your knowledge!</h2>

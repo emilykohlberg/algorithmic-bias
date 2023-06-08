@@ -1,3 +1,51 @@
 p {
     font-size: 18px;
 }
+
+.healthcare-image-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    align-items: center;
+}
+
+.healthcare-image {
+    width: 100%;
+    height: auto;
+}
+
+.example-with-image-container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.with-image{
+    width:55%;
+}
+
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.question {
+    background-color: #482673;
+}
+
+.answer {
+    background-color: #9267c9;
+}
+.question-button {
+    border: none;
+    color: white;
+    width: 80%;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+}

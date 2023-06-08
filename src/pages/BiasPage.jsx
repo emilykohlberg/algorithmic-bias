@@ -1,6 +1,34 @@
+import { useState } from "react";
 import "./BiasPage.css";
 
 const BiasPage = ({}) => {
+  const q1 = {
+    q: "You move to a new town and have to start seeing a new doctor named Dr. Walker who you are communicated with via email. You show up and are shocked to discover that Dr. Walker is a woman. Is this implicit or explicit bias?",
+    a: "Implicit Bias",
+  };
+
+  const q2 = {
+    q: "You work with an older coworker. You have to learn a new software at work, and you don't think your older coworker will be able to figure it out. Is this implicit or explicit bias?",
+    a: "Implicit Bias",
+  };
+
+  const q3 = {
+    q: "You overhear a coworker make a racist comment that certain races are smarter than others. Is this implicit or explicit bias?",
+    a: "Explicit Bias",
+  };
+
+  const [question1, setQuestion1] = useState("q");
+  const [question2, setQuestion2] = useState("q");
+  const [question3, setQuestion3] = useState("q");
+
+  const handleClick = (question, setQuestion) => {
+    // console.log(data);
+    if (question == "q") {
+      setQuestion("a");
+    } else {
+      setQuestion("q");
+    }
+  };
   return (
     <div className="bias-page">
       <h1>Algorithmic bias</h1>
@@ -30,11 +58,12 @@ const BiasPage = ({}) => {
               Both explicit and implicit biases come from years or societal
               prejuduce against minority groups. Even as people becoming more
               accepting and work to elimate exlicit biases, implicit biases
-              still remain, and they are much harder to stop.
+              still remain, and they are much harder to stop (Bias, n.d.).
             </p>
           </div>
           <div className="bias-image-container">
             <img src="../../bias_image.png" className="bias-image"></img>
+            <p>Photo by Markus Spiske</p>
           </div>
         </div>
         <h3>Ok, so can computers have bias too?</h3>
@@ -118,6 +147,7 @@ const BiasPage = ({}) => {
                   src="../../alg_bias_image.png"
                   className="alg-bias-image"
                 ></img>
+                <p>Photo by Christina Animashaun/Vox</p>
               </div>
             </div>
             <h3>
@@ -142,6 +172,55 @@ const BiasPage = ({}) => {
               </div>
             </div>
           </div>
+        </div>
+        <h2>Questions to test your knowledge!</h2>
+        <div className="button-container">
+          <button
+            className={
+              question1 == "q"
+                ? "question-button question"
+                : "question-button answer"
+            }
+            onClick={() => handleClick(question1, setQuestion1)}
+          >
+            <p>{question1 == "q" ? "Question:" : "Answer:"}</p>
+            <p>
+              <b>{q1[question1]}</b>
+            </p>
+            <p>Click to see {question1 == "q" ? "answer" : "question"}</p>
+          </button>
+        </div>
+        <div className="button-container">
+          <button
+            className={
+              question2 == "q"
+                ? "question-button question"
+                : "question-button answer"
+            }
+            onClick={() => handleClick(question2, setQuestion2)}
+          >
+            <p>{question2 == "q" ? "Question:" : "Answer:"}</p>
+            <p>
+              <b>{q2[question2]}</b>
+            </p>
+            <p>Click to see {question2 == "q" ? "answer" : "question"}</p>
+          </button>
+        </div>
+        <div className="button-container">
+          <button
+            className={
+              question3 == "q"
+                ? "question-button question"
+                : "question-button answer"
+            }
+            onClick={() => handleClick(question3, setQuestion3)}
+          >
+            <p>{question3 == "q" ? "Question:" : "Answer:"}</p>
+            <p>
+              <b>{q3[question3]}</b>
+            </p>
+            <p>Click to see {question3 == "q" ? "answer" : "question"}</p>
+          </button>
         </div>
       </div>
     </div>

@@ -1,0 +1,13 @@
+.fairness-image-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.fairness-image {
+    width: 90%;
+    height: auto;
+}

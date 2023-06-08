@@ -1,34 +1,47 @@
+import "./FairnessPage.css";
 const FairnessPage = ({}) => {
   return (
     <div className="fairness-page">
       <h1>Fairness Metrics</h1>
       <div className="main-content">
-        <p>
-          I will discuss algorithmic bias and fairness through an explainer
-          blog/website. This will be aimed towards high school or college
-          students early on in their computer science education or students who
-          do not plan on studying computer science. This is an important and
-          often overlooked computer science topic that I have only recently seen
-          in classes, but I think it would be better to learn about earlier as
-          fighting algorithmic bias should shape the way that people program.
-          Societal biases are often reflected in artificial intelligence
-          algorithms, whether this is intentional or unintentional. Algorithmic
-          bias is something that can be fixed, which can lead to a more fair
-          future for marginalized communities, but people need to be educated on
-          the topic in order to do this. The intent behind the design will be to
-          make people aware of the issue, provide tangible examples so they can
-          understand how it affects people, and offer solutions that they can
-          use in their own programming. Because the target audience is not very
-          familiar with computer science, it will stay at a fairly high level
-          instead of going into the mechanics of different fairness
-          metrics/algorithms. For computer science students, it is meant to
-          spark interest in the topic early on in their education because I
-          think it will help shape their overall outlook on programming rather
-          than feel like an afterthought if it were to be presented later on in
-          their careers. For non-computer science students, it is meant to teach
-          them about the social implications that algorithmic bias has on the
-          world.
-        </p>
+        <div className="fairness-intro-content">
+          <div className="fairness-intro-text">
+            <p>Here is a brief overview of what this page will entail:</p>
+          </div>
+          <div className="fairness-image-container">
+            <img src="../../fairness.png" className="fairness-image"></img>
+            <p>Image by Xiaomeng Wang, Yishi Zhang, & Ruilin Zhu </p>
+          </div>
+        </div>
+        <h4>
+          Definition: Protected attributes are characteristics like race,
+          gender, sexual orientation, etc. that can be used to disciminate
+          against a person.
+        </h4>
+        <div className="fairness-stage1-content">
+          <h3>Stage 1: Initialization</h3>
+          <div className="fairness-stag1-text">
+            <h4>Awareness Based Fairness</h4>
+            <p>There is fairness through awarness and unawareness.</p>
+            <p>
+              Fairness through awarness means that variables like gender or race
+              are considered to make the data fair.
+            </p>
+            <p>
+              Fairness through unawarness means that these sensative variables
+              are completely ignored to promote fairness.
+            </p>
+            <h4>Rationality Based Fairness</h4>
+            <p>
+              This can be divided into statistical based fairness and causality
+              based fairness.
+            </p>
+            <p>
+              Basically rationality based fairness takes the protected
+              attributes.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -13,13 +13,7 @@ const NavBar = () => {
             <NavLink to="examples" id="exampleButton" className="nav-button">
               Examples
             </NavLink>
-            <NavLink
-              to="social-impacts"
-              id="societyButton"
-              className="nav-button"
-            >
-              Social Impacts
-            </NavLink>
+
             <NavLink
               to="fairness-metrics"
               id="fairnessButton"
@@ -35,8 +29,8 @@ const NavBar = () => {
               Data Processing
             </NavLink>
 
-            <NavLink to="technical" id="technicalButton" className="nav-button">
-              Technical Details
+            <NavLink to="about" id="aboutButton" className="nav-button">
+              About Us
             </NavLink>
           </div>
         </nav>
