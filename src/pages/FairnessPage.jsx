@@ -6,7 +6,11 @@ const FairnessPage = ({}) => {
       <div className="main-content">
         <div className="fairness-intro-content">
           <div className="fairness-intro-text">
-            <p>Here is a brief overview of what this page will entail:</p>
+            <p>
+              Here is a brief overview of what this page will entail. The next
+              page will talk about removal, but here we will focus on Stages 1
+              and 2, specificically the statistical based fairness.
+            </p>
           </div>
           <div className="fairness-image-container">
             <img src="./fairness.png" className="fairness-image"></img>
@@ -71,8 +75,10 @@ const FairnessPage = ({}) => {
             <p>𝑃( 𝑦̂ | 𝑠 = 0, 𝑦 ) = 𝑃( 𝑦̂ | 𝑠 = 1, 𝑦 ), 𝑦̂ = 0, 1, 𝑦 = 0, 1</p>
             <p>
               <b>Equal opportunity</b> just focuses on the true positive rates.
+              It is a less effective version of equilized odds.
             </p>
             <p>𝑃( 𝑦̂ = 1 | 𝑠 = 0, 𝑦 = 1 ) = 𝑃( 𝑦̂ = 1 | 𝑠 = 1, 𝑦 = 1 )</p>
+            <p>(Wang et al., 2022)</p>
           </div>
         </div>
       </div>
