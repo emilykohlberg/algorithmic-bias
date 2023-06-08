@@ -46,7 +46,7 @@ const ExamplePage = ({}) => {
             </p>
           </div>
           <div className="healthcare-image-container">
-            <img src="../../healthcare.png" className="healthcare-image"></img>
+            <img src="./healthcare.png" className="healthcare-image"></img>
             <p>Photo by Daan Stevens</p>
           </div>
         </div>

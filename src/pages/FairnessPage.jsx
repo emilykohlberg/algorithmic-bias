@@ -9,7 +9,7 @@ const FairnessPage = ({}) => {
             <p>Here is a brief overview of what this page will entail:</p>
           </div>
           <div className="fairness-image-container">
-            <img src="../../fairness.png" className="fairness-image"></img>
+            <img src="./fairness.png" className="fairness-image"></img>
             <p>Image by Xiaomeng Wang, Yishi Zhang, & Ruilin Zhu </p>
           </div>
         </div>

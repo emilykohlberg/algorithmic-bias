@@ -62,7 +62,7 @@ const BiasPage = ({}) => {
             </p>
           </div>
           <div className="bias-image-container">
-            <img src="../../bias_image.png" className="bias-image"></img>
+            <img src="./bias_image.png" className="bias-image"></img>
             <p>Photo by Markus Spiske</p>
           </div>
         </div>
@@ -144,7 +144,7 @@ const BiasPage = ({}) => {
               </div>
               <div className="alg-bias-image-container">
                 <img
-                  src="../../alg_bias_image.png"
+                  src="./alg_bias_image.png"
                   className="alg-bias-image"
                 ></img>
                 <p>Photo by Christina Animashaun/Vox</p>
